@@ -1,0 +1,10 @@
+node_modules/
+packages/ui/dist/
+data/chats/
+data/workflows/_exec-history/
+data/config/providers.local.json
+data/execution-logs/
+packages/server/src/mcp/paaw-mcp-server/adapters/_config/*.json
+!packages/server/src/mcp/paaw-mcp-server/adapters/_config/.gitkeep
+.env
+*.log

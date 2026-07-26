@@ -1,0 +1,16 @@
+{
+  "name": "tagent",
+  "version": "1.0.0",
+  "description": "Standalone Agentic Workflow Platform \u2014 build autonomous agents that get things done",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:ui\"",
+    "dev:server": "node packages/server/src/index.mjs",
+    "dev:ui": "cd packages/ui && npx vite --port 4201",
+    "build": "cd packages/ui && npx vite build",
+    "start": "node packages/server/src/index.mjs"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.4"
+  }
+}

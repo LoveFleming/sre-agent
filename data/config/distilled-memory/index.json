@@ -1,0 +1,7 @@
+{
+  "lastProcessedAt": null,
+  "lastRun": "2026-07-25T19:00:00Z",
+  "status": "no-data",
+  "note": "tAgent data 目錄不存在：/Users/steward/App/tAgent/data/chats/ 沒有 .json 檔案，MEMORY.md 也不存在。可能 tAgent 從未被初始化，或路徑已更改。需要確認正確的 chat data 路徑後才能開始蒸餾。",
+  "processedFiles": []
+}
