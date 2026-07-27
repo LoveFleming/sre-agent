@@ -1,15 +1,18 @@
 {
-  "name": "tagent",
+  "name": "sre-agent",
   "version": "1.0.0",
-  "description": "Standalone Agentic Workflow Platform \u2014 build autonomous agents that get things done",
+  "description": "Standalone Agentic Workflow Platform — build autonomous agents that get things done",
   "type": "module",
   "scripts": {
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:ui\"",
     "dev:server": "node packages/server/src/index.mjs",
     "dev:ui": "cd packages/ui && npx vite --port 4201",
     "build": "cd packages/ui && npx vite build",
-    "start": "node packages/server/src/index.mjs"
+    "start": "npm run build && node packages/server/src/index.mjs"
   },
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "concurrently": "^10.0.4"
   }
