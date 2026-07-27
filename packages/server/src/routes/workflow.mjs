@@ -555,6 +555,7 @@ async function _callLLM(llm, messages, tools) {
     messages,
     tools: tools.length > 0 ? tools : undefined,
     temperature: 0.7,
+    max_tokens: 16384,
   };
 
   // Try primary
